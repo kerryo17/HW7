@@ -1,0 +1,105 @@
+/*
+Author: Kerry O'Neill
+Email address: kerry_oneill@student.uml.edu
+Class: 91.61 GUI Programming I
+*/
+
+/* style code for table */
+table, th, td {
+  border: 3px solid purple;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  border-spacing: 30px;
+}
+
+th, td{
+  width: 50px;
+  font-size: 25px;
+}
+
+.error{
+  color: red;
+}
+
+#mincol_slider{
+  width: 60%;
+  background: linear-gradient(90deg, rgba(237,195,231,1) 29%, rgba(172,126,180,1) 64%);
+  outline: none;
+}
+
+#maxcol_slider{
+  width: 60%;
+  background: linear-gradient(90deg, rgba(237,195,231,1) 29%, rgba(172,126,180,1) 64%);
+  outline: none;
+}
+
+#minrow_slider{
+  width: 60%;
+  background: linear-gradient(90deg, rgba(237,195,231,1) 29%, rgba(172,126,180,1) 64%);
+  outline: none;
+
+}
+
+#maxrow_slider{
+  width: 60%;
+  background: linear-gradient(90deg, rgba(237,195,231,1) 29%, rgba(172,126,180,1) 64%);
+  outline: none;
+}
+
+.min_colX{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.max_colY{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.min_rowX{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.max_rowY{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.slider1{
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 400px;
+  padding-bottom: 20px;
+}
+
+.slider2{
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 400px;
+  padding-bottom: 20px;
+}
+
+.slider3{
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 400px;
+  padding-bottom: 20px;
+}
+
+.slider4{
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 400px;
+}
+
+.button{
+  margin: auto;
+  padding-top: 40px;
+  padding-left: 400px;
+}

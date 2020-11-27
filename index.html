@@ -1,0 +1,100 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet"
+  href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="js/slider.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/tabs.js"></script>
+
+  <title>HW 7</title>
+  <!--header code, i used a jumbotron and used a gradient background-->
+  <div class="header">
+    <div style="background: linear-gradient(to top, #cc99ff 0%, #cc6699 100%);" class="jumbotron text-center" >
+      <h1> Dynamic Multiplication Table</h1>
+    </div>
+  </div>
+</head>
+<!--beginning of body-->
+<body>
+  <div class="container">
+    <!--makes grey background for jumbotron for the instructions for website-->
+    <div style="background: #DCDCDC;" class="jumbotron text-center" >
+      <h3>Slide the numbers below for the numbers of row and columns you would like for the table.</h3>
+    </div>
+  </div>
+
+  <!--form for sliders-->
+  <form id="form" action="index.html" method="post">
+
+    <!--i separated min_colx label and slider so it was easier to manipulate with css, this is label -->
+    <div class="min_colX">
+      <label for="min_col"> Min Col Input: </label>
+      <input type="text" id="min_col" name="min_col">
+    </div>
+
+    <!-- slider 1 -->
+    <div class="slider1">
+      <div id="mincol_slider"></div>
+    </div>
+
+    <div class="max_colY">
+      <label for="max_col"> Max Col Input: </label>
+      <input type="text" id="max_col" name="max_col">
+    </div>
+
+    <!-- slider 2 -->
+    <div class="slider2">
+      <div id="maxcol_slider"></div>
+    </div>
+
+    <div class="min_rowX">
+      <label for="min_row"> Min Row Input: </label>
+      <input type="text" id="min_row" name="min_row">
+    </div>
+
+    <!-- slider 3 -->
+    <div class="slider3">
+      <div id="minrow_slider"></div>
+    </div>
+
+    <div class="max_rowY">
+      <label for="max_row"> Max Row Input: </label>
+      <input type="text" id="max_row" name="max_row">
+    </div>
+
+    <!-- slider 4 -->
+    <div class="slider4">
+      <div id="maxrow_slider"></div>
+    </div>
+
+    <div class="button">
+      <input type="submit" class="btn btn-primary" value="Input for Tab">
+      <button type="button" class="btn btn-danger" onClick="delete_tab()">Remove Select Tab</button>
+    </div>
+  </form>
+
+  <div id = "tabs">
+    <ul id="tab_input">
+      <li><a href = "#tab1">Tab 1</a></li>
+    </ul>
+    <div id="tab1">
+      <!--This div class probides the table with formatting like scrollbars-->
+      <div class="table">
+        <table class="table_2" id="mult_table"></table>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
